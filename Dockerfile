@@ -7,7 +7,7 @@ RUN npm install --package-lock-only
 RUN npm run build
 WORKDIR dist
 RUN ls
-ADD bio-cloud /code/sqlize/BioCloudSQLize
+ADD /BioCloud-Frontend/dist/bio-cloud /code/sqlize/BioCloudSQLize
 WORKDIR /code/sqlize
 RUN npm install
 WORKDIR BioCloudSQLize
